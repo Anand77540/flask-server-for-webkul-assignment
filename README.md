@@ -76,8 +76,9 @@ python -m venv venv_name
 pip install flask
 pip install Werkzeug
 pip install os
+pip install Flask-Cors
 
-5. run server by typing following command
+6. run server by typing following command
 python app.py
 
 
