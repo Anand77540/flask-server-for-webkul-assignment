@@ -1,8 +1,10 @@
 from flask import Flask, jsonify, request
 import sqlite3
 from werkzeug.security import generate_password_hash, check_password_hash
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 app.config['SECRET_KEY'] = 'anandbhaikasecret'
 
 # Define the database schema as a string
@@ -34,9 +36,13 @@ def server_status():
 def signup():
     data = request.get_json()
 
-    name = data.get('name')
-    email = data.get('email')
-    password = data.get('password')
+    name = data['name']
+    email = data['email']
+    password = data['password']
+
+    # name = data.get('name')
+    # email = data.get('email')
+    # password = data.get('password')
 
     if not name or not email or not password:
         return jsonify({'message': 'Please provide all the required fields.'}), 400
@@ -59,8 +65,11 @@ def signup():
 def login():
     data = request.get_json()
 
-    email = data.get('email')
-    password = data.get('password')
+    email = data['email']
+    password = data['password']
+    
+    # email = data.get('email')
+    # password = data.get('password')
 
     if not email or not password:
         return jsonify({'message': 'Please provide both email and password.'}), 400
@@ -91,7 +100,9 @@ def get_all_users():
         users_list = [dict(user) for user in users]
     return jsonify({'users': users_list}), 200
 
-
+# ipconfig-  192.168.0.109
 if __name__ == '__main__':
     initialize_database()
-    app.run(debug=True)
+    # app.run(debug=True)
+    # app.run(host='192.168.0.109', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
