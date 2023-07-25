@@ -11,7 +11,7 @@ https://new-flask-server-webkul-assignment.onrender.com
 
 
 
-3. for signup (create new user)
+2. for signup (create new user)
    
 method: post
 
@@ -26,7 +26,7 @@ json :
 
 
 
-5. for login
+3. for login
    
 method : post 
 
@@ -40,11 +40,16 @@ json:
 
 
 
-7. for getting all users
+4. for getting all users
    
 https://new-flask-server-webkul-assignment.onrender.com/api/v1/users
 
 (method : get)
+
+
+
+
+
 
 
 
