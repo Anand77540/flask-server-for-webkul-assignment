@@ -1,4 +1,8 @@
 # flask-server-for-webkul-assignment
+
+// hosted server url
+https://flask-server-for-webkul-assignment.onrender.com
+
 for creating python virtual environment
     python -m venv venv_name
 
@@ -57,5 +61,3 @@ method: get
 server url :  http://127.0.0.1:5000/api/v1/users
 
 
-// hosted server url
-https://flask-server-for-webkul-assignment.onrender.com
