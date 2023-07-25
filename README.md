@@ -40,8 +40,8 @@ method : post
 server url : http://127.0.0.1:5000/api/v1/signup
 json : 
 {
-    "name":"Satish Tiwari",
-    "email":"tiwarisatish989@gmail.com",
+    "name":"Anand Tiwari",
+    "email":"tiwarianand@gmail.com",
     "password":"admin123"
 }
 
@@ -51,7 +51,7 @@ method : post
 server url :  http://127.0.0.1:5000/api/v1/login
 json:
 {
-    "email":"tiwarisatish989@gmail.com",
+    "email":"tiwarianand@gmail.com",
     "password":"admin123"
 }
 
