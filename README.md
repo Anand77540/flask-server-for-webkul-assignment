@@ -55,3 +55,7 @@ json:
 4. get all user details
 method: get
 server url :  http://127.0.0.1:5000/api/v1/users
+
+
+// hosted server url
+https://flask-server-for-webkul-assignment.onrender.com
