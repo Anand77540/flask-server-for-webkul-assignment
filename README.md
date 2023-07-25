@@ -1,7 +1,39 @@
 # flask-server-for-webkul-assignment
 
-// hosted server url
+// hosted server url:-
 https://new-flask-server-webkul-assignment.onrender.com
+
+1. for default get request:
+https://new-flask-server-webkul-assignment.onrender.com
+(method: get)
+
+3. for signup (create new user)
+method: post
+https://new-flask-server-webkul-assignment.onrender.com/api/v1/signup
+json : 
+{
+    "name":"Anand Tiwari",
+    "email":"tiwarianand@gmail.com",
+    "password":"admin123"
+}
+
+4. for login
+method : post 
+https://new-flask-server-webkul-assignment.onrender.com/api/v1/login
+json:
+{
+    "email":"tiwarianand@gmail.com",
+    "password":"admin123"
+}
+
+5. for getting all users
+https://new-flask-server-webkul-assignment.onrender.com/api/v1/users
+(method : get)
+
+
+
+
+
 
 for creating python virtual environment
     python -m venv venv_name
