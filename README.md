@@ -4,12 +4,19 @@
 https://new-flask-server-webkul-assignment.onrender.com
 
 1. for default get request:
+   
 https://new-flask-server-webkul-assignment.onrender.com
+
 (method: get)
 
+
+
 3. for signup (create new user)
+   
 method: post
+
 https://new-flask-server-webkul-assignment.onrender.com/api/v1/signup
+
 json : 
 {
     "name":"Anand Tiwari",
@@ -17,17 +24,26 @@ json :
     "password":"admin123"
 }
 
-4. for login
+
+
+5. for login
+   
 method : post 
+
 https://new-flask-server-webkul-assignment.onrender.com/api/v1/login
+
 json:
 {
     "email":"tiwarianand@gmail.com",
     "password":"admin123"
 }
 
-5. for getting all users
+
+
+7. for getting all users
+   
 https://new-flask-server-webkul-assignment.onrender.com/api/v1/users
+
 (method : get)
 
 
